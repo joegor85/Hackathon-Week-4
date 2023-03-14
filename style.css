@@ -1,0 +1,19 @@
+header {
+  background-color: #bc986a;
+  font-size: x-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 2px solid black;
+  text-align: center;
+  height: 50px;
+  padding-top: 15px;
+}
+body {
+  background-color: #659dbd;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 5px solid black;
+  text-align: center;
+}
+footer {
+  border: 2px solid black;
+  background-color: #8d8741;
+}
