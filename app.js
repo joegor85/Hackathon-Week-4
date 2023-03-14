@@ -1,3 +1,4 @@
+// ----------- Using Cleave.js -----------
 var bday = new Cleave(".input-bday", {
   date: true,
   delimiter: "-",
@@ -11,16 +12,33 @@ var creditCard = new Cleave(".input-cc", {
   },
 });
 
+// var phone = new Cleave(".input-phone", {
+//   phone: true,
+//   phoneRegionCode: "{country}",
+// });
+
+// ------------- Using P5js -------------
+let img;
 function setup() {
-  createCanvas(1200, 800);
+  createCanvas(1000, 650, WEBGL);
+  normalMaterial();
+  img = loadImage("cooltexture.jpg");
+  textureMode(NORMAL);
+  describe(
+    "Camera orbits around a box when mouse is hold-clicked & then moved."
+  );
 }
 
 function draw() {
-  if (mouseIsPressed) {
-    fill(0);
-  } else {
-    fill(255);
-  }
-  ellipse(mouseX, mouseY, 80, 80);
+  background(100);
+  texture(img);
+  orbitControl(5, 5, 5);
+  rotateY(millis() / 5000);
+  // box(400, 400);
+  torus(150, 150);
 }
 
+// Allowing the colorpicker to change the background
+document.getElementById("colorpicker").addEventListener("change", function () {
+  document.body.style.backgroundColor = this.value;
+});

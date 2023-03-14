@@ -12,11 +12,12 @@
     <script defer src="app.js"></script>
     <title>Hackathon project</title>
   </head>
-  <header>This is a creative space for you!</header>
+  <header>This is a fun space for you!</header>
   <body></body>
   <footer>
-    <div>
-      Enter your name, birthday, and credit card info for more cool features!
+    <div class="inputs">
+      Enter your name, birthday, credit card info and phone number for more cool
+      features!
     </div>
     <form>
       <label for="fname">First name:</label><br />
@@ -27,6 +28,16 @@
       <input type="text" class="input-bday" /><br />
       <label for="cc">Credit Card:</label><br />
       <input type="text" class="input-cc" /><br />
+      <label for="phone">Phone:</label><br />
+      <input type="text" class="input-phone" /><br />
     </form>
+    <div class="instructions">
+      Right-Click and drag to Rotate, Left-Click and drag zoom and interact in
+      other ways.
+    </div>
+    <div class="colorPicker">
+      <label for="colorpicker">Page BackGround Color Picker:</label>
+      <input type="color" id="colorpicker" value="#000000" />
+    </div>
   </footer>
 </html>

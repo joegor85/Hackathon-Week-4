@@ -1,10 +1,11 @@
 header {
   background-color: #bc986a;
-  font-size: x-large;
+  font-size: xx-large;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  border: 2px solid black;
+  border: 3px solid black;
   text-align: center;
-  height: 50px;
+  height: 650px;
+  width: 300px;
   padding-top: 15px;
 }
 body {
@@ -12,8 +13,28 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   border: 5px solid black;
   text-align: center;
+
+  display: flex;
+  flex-direction: row;
 }
 footer {
-  border: 2px solid black;
+  border: 3px solid black;
   background-color: #8d8741;
+}
+
+.inputs {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+form {
+  padding-bottom: 50px;
+}
+.instructions {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fbeec1;
+}
+.colorPicker {
+  padding-top: 75px;
+  font-size: larger;
 }
